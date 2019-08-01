@@ -22,8 +22,8 @@ public class Login {
         WebDriver driver =new ChromeDriver();
         driver.get("http://220.160.52.164:9085");
 
-        driver.findElement(By.id("loginname")).sendKeys("内坑镇上方村");
-        driver.findElement(By.id("loginpwd")).sendKeys("nk123456");
+        driver.findElement(By.id("loginname")).sendKeys("111");
+        driver.findElement(By.id("loginpwd")).sendKeys("111");
 
         //点击按扭
         System.out.println("请输入验证码");
