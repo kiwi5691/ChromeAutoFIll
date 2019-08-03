@@ -13,7 +13,7 @@ public class ValidUtils {
             b/=10;
             count++;
         }
-        if(count<11){
+        if(count<10){
             return "0595-"+ tel;
         }
         else {

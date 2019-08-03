@@ -1,5 +1,8 @@
 package utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @auther kiwi
  * @Date 2019/8/1 21:11
@@ -8,7 +11,7 @@ public class Constant {
     /*
      *此处到时候初始化需要修改
      */
-    public static  String keyValue="锦南路";
+    public static  String keyValue="群峰路";
     public static  String prefix="号";
     //
 
@@ -32,6 +35,7 @@ public class Constant {
 
     public static String picName ="";
 
+    public static ArrayList<String> arrayList = new ArrayList<String>(100);
 
 
 }

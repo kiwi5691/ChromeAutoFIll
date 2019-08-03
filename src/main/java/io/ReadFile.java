@@ -27,15 +27,13 @@ public class ReadFile {
                 for (int i = 0; i < filelist.length; i++) {
                     File readfile = new File(filepath + "\\" + filelist[i]);
                     if (!readfile.isDirectory()) {
-                        System.out.println("path=" + readfile.getPath());
-                        System.out.println("absolutepath="
-                                + readfile.getAbsolutePath());
-                        System.out.println("name=" + readfile.getName());
-                        Constant.picName=readfile.getName();
+                        Constant.arrayList.add(readfile.getAbsolutePath());
+
                     } else if (readfile.isDirectory()) {
                         readfile(filepath + "\\" + filelist[i]);
                     }
                 }
+
 
             }
 
@@ -65,6 +63,7 @@ public class ReadFile {
                                         File delfile = new File(delpath + "\\" + filelist[i]);
                                         if (!delfile.isDirectory()) {
                                                 System.out.println("path=" + delfile.getPath());
+
                                                 System.out.println("absolutepath="
                                                                 + delfile.getAbsolutePath());
                                                 System.out.println("name=" + delfile.getName());
@@ -88,6 +87,8 @@ public class ReadFile {
         String mainUrl="C:\\Users\\ASUS\\Desktop\\work_dektop_pic";
         try {
             readfile(mainUrl);
+
+
             // deletefile("D:/file");
         } catch (FileNotFoundException ex) {
         } catch (IOException ex) {
